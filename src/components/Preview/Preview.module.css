@@ -1,0 +1,26 @@
+.wrapper .img-womens{
+    background-image: url(./assets/новинки.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1140px;
+    height: 502px;
+    margin: auto;
+}
+
+.wrapper .img-coll{
+    background-image: url(./assets/banerr.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1140px;
+    height: 406px;
+    margin: auto;
+}
+
+.wrapper .img-store{
+    background-image: url(./assets/booriva\ store.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 770px;
+    margin: auto;
+}
