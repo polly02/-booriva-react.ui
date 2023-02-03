@@ -7,6 +7,72 @@
     margin: auto;
 }
 
+.wrapper .price {
+    display: grid;
+    grid-template-columns: repeat(4, 277px);
+}
+
+.wrapper .price .price-1099 {
+    background-image: url(./assets/1\ 099\ ₴.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    position: relative;
+    left: 235px;
+    top: -40px;
+}
+
+.wrapper .price .price-1299 {
+    background-image: url(./assets/1\ 299\ ₴.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    position: relative;
+    left: 235px;
+    top: -40px;
+}
+
+.wrapper .price .price-2499 {
+    background-image: url(./assets/2\ 499\ ₴.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    position: relative;
+    left: 240px;
+    top: -40px;
+}
+
+.wrapper .price .price-899 {
+    background-image: url(./assets/899\ ₴.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 17px;
+    position: relative;
+    left: 240px;
+    top: -40px;
+}
+
+.wrapper .name {
+    display: grid;
+    grid-template-columns: repeat(4, 277px);
+    position: relative;
+    top: -20px;
+    margin-bottom: 110px;
+}
+
+.wrapper .name p {
+    font: 400 16px 'Montserrat';
+    color: #1F1F1F;
+    width: 190px;
+    margin-left: 80px;
+
+}
+
+.wrapper .name p:not(:last-child) {
+    margin-left: 60px;
+
+}
+
 .wrapper .img-coll {
     background-image: url(./assets/banerr.png);
     background-size: contain;
@@ -14,13 +80,67 @@
     width: 1140px;
     height: 406px;
     margin: auto;
+    margin-bottom: 160px;
 }
 
 .wrapper .img-store {
-    background-image: url(./assets/booriva\ store.png);
+    background-image: url(./assets/booriva\ store.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 1000px;
     height: 770px;
     margin: auto;
+    margin-bottom: 150px;
+}
+
+.wrapper .advantages {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.wrapper .advantages div {
+    width: 195px;
+    text-align: center;
+    margin-left: 80px;
+}
+
+
+.wrapper .advantages .icon-send {
+    background-image: url(./assets/icon_отправка.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 81px;
+    height: 98px;
+    /* position: relative; */
+    /* top: 2310px;
+    left: 210px; */
+}
+
+.wrapper .advantages .icon-change {
+    background-image: url(./assets/icon_обмен.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 81px;
+    height: 98px;
+    /* position: absolute;
+    top: 2310px;
+
+    left: 610px; */
+
+}
+
+.wrapper .advantages .icon-made {
+    background-image: url(./assets/icon_сердце.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 81px;
+    height: 98px;
+    /* position: absolute;
+    top: 2310px;
+
+    left: 1025px; */
+
+
 }
