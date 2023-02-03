@@ -1,4 +1,4 @@
-.wrapper .img-womens{
+.wrapper .img-womens {
     background-image: url(./assets/новинки.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -7,7 +7,7 @@
     margin: auto;
 }
 
-.wrapper .img-coll{
+.wrapper .img-coll {
     background-image: url(./assets/banerr.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
     margin: auto;
 }
 
-.wrapper .img-store{
+.wrapper .img-store {
     background-image: url(./assets/booriva\ store.png);
     background-size: contain;
     background-repeat: no-repeat;
