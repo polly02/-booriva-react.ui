@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import PreviewPage from "./pages/PreviewPage/PreviewPage";
 
@@ -7,7 +8,7 @@ function App() {
     <Routes>
       <Route path="/" element={<PreviewPage/>}></Route>
       <Route path="*" element={<NotFoundPage/>}></Route>
-      <Route></Route>
+      <Route path="/categories" element={<CategoriesPage/>}></Route>
     </Routes>
 
   );
