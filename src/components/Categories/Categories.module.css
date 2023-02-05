@@ -28,7 +28,27 @@
     grid-row: 1/2;
 }
 
-.dress .dress-img {
+.bomber {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.dress-t-shirt {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.sweatshirt2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.dress2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.dress .dress-img, .dress2 .dress-img {
     background-image: url(./assets/dress.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -36,8 +56,24 @@
     height: 600px;
 }
 
-.sweatshirt .sweatshirt-img {
+.sweatshirt .sweatshirt-img, .sweatshirt2 .sweatshirt-img {
     background-image: url(./assets/sweatshirt.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 466px;
+    height: 600px;
+}
+
+.bomber .bomber-img {
+    background-image: url(./assets/bomber.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 466px;
+    height: 600px;
+}
+
+.dress-t-shirt .dress-t-shirt-img {
+    background-image: url(./assets/dress-t-shirt.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 466px;

@@ -95,7 +95,7 @@
 
 .wrapper .advantages {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     margin-bottom: 100px;
 }
@@ -106,16 +106,13 @@
     margin-left: 80px;
 }
 
-
 .wrapper .advantages .icon-send {
     background-image: url(./assets/icon_отправка.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 81px;
     height: 98px;
-    /* position: relative; */
-    /* top: 2310px;
-    left: 210px; */
+    margin: auto;
 }
 
 .wrapper .advantages .icon-change {
@@ -124,11 +121,7 @@
     background-repeat: no-repeat;
     width: 81px;
     height: 98px;
-    /* position: absolute;
-    top: 2310px;
-
-    left: 610px; */
-
+    margin: auto;
 }
 
 .wrapper .advantages .icon-made {
@@ -137,10 +130,5 @@
     background-repeat: no-repeat;
     width: 81px;
     height: 98px;
-    /* position: absolute;
-    top: 2310px;
-
-    left: 1025px; */
-
-
+    margin: auto;
 }
