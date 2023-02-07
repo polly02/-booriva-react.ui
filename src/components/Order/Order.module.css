@@ -1,0 +1,50 @@
+.order .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.order .contact .img {
+    background-image: url(./assets/contact.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 213px;
+    height: 155px;
+}
+
+.order .contact .forms {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.order .delivery {
+    display: flex;
+    margin-top: 85px;
+    margin-left: 190px;
+}
+
+.order .delivery .img {
+    background-image: url(./assets/delivery.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 138px;
+    margin-right: 7px;
+}
+
+.order .comments {
+    margin-left: 443px;
+    margin-top: 30px;
+}
+
+.order .btn {
+    background-image: url(./assets/кнопка.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 236px;
+    height: 50px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}

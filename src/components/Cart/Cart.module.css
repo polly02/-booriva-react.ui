@@ -59,6 +59,7 @@
     width: 23px;
     height: 23px;
     margin-left: 100px;
+    cursor: pointer;
 }
 
 
@@ -92,4 +93,5 @@
     margin: auto;
     margin-top: 60px;
     margin-bottom: 80px;
+    cursor: pointer;
 }
