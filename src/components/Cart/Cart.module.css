@@ -1,0 +1,95 @@
+.cart .img-cart {
+    background-image: url(./assets/корзина.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 103px;
+    margin-top: 23px;
+}
+
+.cart .wrapper-cart {
+    display: grid;
+    grid-template-columns: repeat(2, 565px);
+    grid-auto-rows: max-content;
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+    margin-bottom: 80px;
+}
+
+.cart .wrapper-cart .product {
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.cart .wrapper-cart .product .product-img {
+    background-image: url(./assets/bomber.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 134px;
+    height: 177px;
+}
+
+.cart .wrapper-cart .product .product-info {
+    margin-left: 20px;
+}
+
+.cart .wrapper-cart .product .product-info h2 {
+    font: 600 16px 'Montserrat';
+    color: #000000;
+    margin-top: 25px;
+}
+
+.cart .wrapper-cart .product .product-info .size {
+    font: 400 14px 'Montserrat';
+    color: #1F1F1F;
+    margin-top: 35px;
+}
+
+.cart .wrapper-cart .product .product-info .price {
+    font: 700 16px 'Montserrat';
+    color: #FDA3C4;
+    margin-top: 35px;
+}
+
+.cart .wrapper-cart .product .product-delete {
+    background-image: url(./assets/delete.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    margin-left: 100px;
+}
+
+
+.cart .total-quantity, .total-count{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .total-quantity, .total-count p{
+    font: 400 16px 'Montserrat';
+    color: #1F1F1F;
+    margin-top: 30px;
+}
+
+.cart .total-quantity .quantity{
+    font: 700 16px 'Montserrat';
+    color: #FDA3C4;
+}
+
+.cart .total-quantity .count{
+    font: 700 16px 'Montserrat';
+    color:  #1F1F1F;
+}
+
+.cart .btn {
+    background-image: url(./assets/кнопка.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 53px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}

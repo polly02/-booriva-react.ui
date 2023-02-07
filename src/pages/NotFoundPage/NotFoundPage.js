@@ -1,4 +1,4 @@
-import NotFound from "../../components/Error/NotFound"
+import NotFound from "../../components/NotFound/NotFound"
 import Header from "../../components/Header/Header"
 
 function NotFoundPage() {
