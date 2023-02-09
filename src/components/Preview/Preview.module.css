@@ -95,40 +95,40 @@
 
 .wrapper .advantages {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
-    margin-bottom: 100px;
 }
 
-.wrapper .advantages div {
-    width: 195px;
+.wrapper .advantages .section {
+    display: flex;
+    align-items: center;
     text-align: center;
-    margin-left: 80px;
 }
 
-.wrapper .advantages .icon-send {
+.wrapper .advantages .section .image-1 {
     background-image: url(./assets/icon_отправка.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 81px;
-    height: 98px;
-    margin: auto;
+    width: 84px;
+    height: 74px;
 }
 
-.wrapper .advantages .icon-change {
+.wrapper .advantages .section .image-2 {
     background-image: url(./assets/icon_обмен.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 81px;
-    height: 98px;
-    margin: auto;
+    width: 84px;
+    height: 74px;
 }
 
-.wrapper .advantages .icon-made {
+.wrapper .advantages .section .image-3 {
     background-image: url(./assets/icon_сердце.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 81px;
-    height: 98px;
-    margin: auto;
+    width: 84px;
+    height: 74px;
+}
+
+.wrapper .advantages .section .paragraph {
+    width: 175px;
 }

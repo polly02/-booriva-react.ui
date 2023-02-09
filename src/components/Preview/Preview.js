@@ -1,6 +1,26 @@
+import AdvantageItem from "./AdvantageItem"
 import style from "./Preview.module.css"
 
 function Preview() {
+    const advantages = [{
+        id: 1,
+        image: "image-1",
+        logo: "Отправка день в день",
+        paragraph: "При заказе до 1800"
+    },
+    {
+        id: 2,
+        image: "image-2",
+        logo: "Легкий возврат/обмен",
+        paragraph: "В течении 14 дней"
+    },
+    {
+        id: 3,
+        image: "image-3",
+        logo: "Сделано в Украине",
+        paragraph: "Прям в Киеве"
+    }]
+
     return (
         <div className={style["wrapper"]}>
             <div className={style["img-womens"]}></div>
@@ -20,21 +40,7 @@ function Preview() {
             <div className={style["img-store"]}></div>
 
             <div className={style["advantages"]}>
-                <div>
-                    <div className={style["icon-send"]}></div>
-                    <h2>Отправка день в день</h2>
-                    <p>При заказе до 1800</p>
-                </div>
-                <div>
-                    <div className={style["icon-change"]}></div>
-                    <h2>Легкий возврат/обмен</h2>
-                    <p>В течении 14 дней</p>
-                </div>
-                <div>
-                    <div className={style["icon-made"]}></div>
-                    <h2>Сделано в Украине</h2>
-                    <p>Прям в Киеве</p>
-                </div>
+                {advantages.map(el => <AdvantageItem key={el.id} logo={el.logo} paragraph={el.paragraph} image={el.image}/>)}
             </div>
         </div>
     )
