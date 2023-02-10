@@ -40,7 +40,7 @@ function Preview() {
             <div className={style["img-store"]}></div>
 
             <div className={style["advantages"]}>
-                {advantages.map(el => <AdvantageItem key={el.id} logo={el.logo} paragraph={el.paragraph} image={el.image}/>)}
+                {advantages.map(el => <AdvantageItem key={el.id} logo={el.logo} paragraph={el.paragraph} image={el.image} />)}
             </div>
         </div>
     )

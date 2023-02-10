@@ -8,11 +8,11 @@ import PreviewPage from "./pages/PreviewPage/PreviewPage";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<PreviewPage/>}></Route>
-      <Route path="*" element={<NotFoundPage/>}></Route>
-      <Route path="/categories" element={<CategoriesPage/>}></Route>
-      <Route path="/cart" element={<CartPage/>}></Route>
-      <Route path="/order" element={<OrderPage/>}></Route>
+      <Route path="/" element={<PreviewPage />}></Route>
+      <Route path="*" element={<NotFoundPage />}></Route>
+      <Route path="/categories" element={<CategoriesPage />}></Route>
+      <Route path="/cart" element={<CartPage />}></Route>
+      <Route path="/order" element={<OrderPage />}></Route>
     </Routes>
 
   );
