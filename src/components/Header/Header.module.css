@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     padding: 15px 0;
 }
 
@@ -39,7 +39,7 @@
     color: #1F1F1F;
 }
 
-.wrapper nav p:hover{
+.wrapper nav p:hover {
     color: #FDA3C4;
     cursor: pointer;
 }
