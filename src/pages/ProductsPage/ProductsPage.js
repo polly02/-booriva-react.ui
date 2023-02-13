@@ -1,15 +1,15 @@
-import Categories from "../../components/Categories/Categories"
 import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
+import Products from "../../components/Products/Products"
 
-function CategoriesPage(){
+function ProductsPage(){
     return(
         <>
         <Header></Header>
-        <Categories></Categories>
+        <Products></Products>
         <Footer></Footer>
         </>
     )
 }
 
-export default CategoriesPage
+export default ProductsPage

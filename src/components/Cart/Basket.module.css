@@ -20,13 +20,14 @@
     display: flex;
     margin: auto;
     margin-top: 40px;
+    /* width: 500px; */
 }
 
+
 .cart .wrapper-cart .product .product-img {
-    background-image: url(./assets/bomber.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 134px;
+    width: 150px;
     height: 177px;
 }
 
@@ -63,25 +64,27 @@
 }
 
 
-.cart .total-quantity, .total-count{
+.cart .total-quantity,
+.total-count {
     display: flex;
     justify-content: space-between;
 }
 
-.cart .total-quantity, .total-count p{
+.cart .total-quantity,
+.total-count p {
     font: 400 16px 'Montserrat';
     color: #1F1F1F;
     margin-top: 30px;
 }
 
-.cart .total-quantity .quantity{
+.cart .total-quantity .quantity {
     font: 700 16px 'Montserrat';
     color: #FDA3C4;
 }
 
-.cart .total-quantity .count{
+.cart .total-quantity .count {
     font: 700 16px 'Montserrat';
-    color:  #1F1F1F;
+    color: #1F1F1F;
 }
 
 .cart .btn {

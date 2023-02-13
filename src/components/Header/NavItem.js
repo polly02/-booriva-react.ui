@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function NavItem({ name }) {
     return (
         <>
-            <Link to={"*"}>
+            <Link to={"/products"}>
                 <p>{name}</p>
             </Link>
         </>
