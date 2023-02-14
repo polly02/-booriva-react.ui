@@ -7,8 +7,8 @@ function Basket() {
         <div className={style["cart"]}>
             <div className={style["img-cart"]}></div>
             <div className={style["wrapper-cart"]}>
-                
-                {basket.map(el => <ProductItem key={el.id} name={el.name} price={el.price} path={el.path}/>)}
+
+                {basket.map(el => <ProductItem key={el.id} name={el.name} price={el.price} path={el.path} />)}
             </div>
 
             <div className={style["total-quantity"]}>
