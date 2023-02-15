@@ -9,7 +9,7 @@ function ProductItem({ name, price, path }) {
             <div className={style["product-info"]}>
                 <h2>{name}</h2>
                 <p className={style["size"]}>S — M</p>
-                <p className={style["price"]}>{price}</p>
+                <p className={style["price"]}>{price} ₴</p>
             </div>
             <div className={style["product-delete"]}></div>
         </div>
