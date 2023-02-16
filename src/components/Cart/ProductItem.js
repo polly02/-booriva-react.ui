@@ -1,6 +1,14 @@
+import basket from "../../context/basket"
 import style from "./Basket.module.css"
 
-function ProductItem({ name, price, path }) {
+
+function ProductItem({ setArrayBasket, arrayBasket, id, name, price, path }) {
+
+    function deleteFromBasket() {
+        let filtered = arrayBasket.filter(el => id !== el.id)
+        setArrayBasket(filtered)
+    }
+
     return (
         <div className={style["product"]}>
             <div className={style["block-info"]}>
@@ -11,7 +19,7 @@ function ProductItem({ name, price, path }) {
                 <p className={style["size"]}>S — M</p>
                 <p className={style["price"]}>{price} ₴</p>
             </div>
-            <div className={style["product-delete"]}></div>
+            <div className={style["product-delete"]} onClick={deleteFromBasket}></div>
         </div>
     )
 }

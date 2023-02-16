@@ -1,9 +1,13 @@
 import basket from '../../context/basket'
 import style from './Products.module.css'
 
-function ProductItem({ name, price, path }) {
+function ProductItem({ id, name, price, path }) {
+
     function addToBasket() {
-        basket.push({ name, price, path })
+        const keys = basket.map(el=>el.id)
+        if(!keys.includes(id)) basket.push({ id, name, price, path })
+
+        // event.target.style = "background-image: url(./assets/)"
     }
 
     return (

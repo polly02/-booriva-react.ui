@@ -1,3 +1,4 @@
-const basket = []
+
+let basket = []
 
 export default basket
