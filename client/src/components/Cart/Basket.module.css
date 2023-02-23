@@ -24,6 +24,7 @@
 
 
 .cart .wrapper-cart .product .product-img {
+    background-image: url(./assets/HSCHOOL.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 150px;

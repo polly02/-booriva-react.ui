@@ -1,11 +1,11 @@
 import basket from '../../context/basket'
 import style from './Products.module.css'
 
-function ProductItem({ id, name, price, path }) {
+function ProductItem({ id, title, price }) {
 
     function addToBasket() {
         const keys = basket.map(el=>el.id)
-        if(!keys.includes(id)) basket.push({ id, name, price, path })
+        if(!keys.includes(id)) basket.push({ id, title, price })
 
         // event.target.style = "background-image: url(./assets/)"
     }
@@ -16,12 +16,12 @@ function ProductItem({ id, name, price, path }) {
 
                 <div className={style['block']}>
                     <div className={style["block-image"]} >
-                        <img alt={name} className={style['img']} src={require(`../../storage/assets/${path}`)}></img>
+                        <div className={style['img']} ></div>
                         <div onClick={addToBasket} className={style['like']}></div>
                     </div>
                     <hr></hr>
                     <div className={style['title-flex']}>
-                        <h1>{name}</h1>
+                        <h1>{title}</h1>
                         <p>{price}</p>
                     </div>
                 </div>
