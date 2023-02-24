@@ -7,13 +7,13 @@ import axios from 'axios'
 function Products() {
     const [products, setProducts] = useState([])
 
-    async function getProducts(){
+    async function getProducts() {
         const response = await axios.get("/products")
         setProducts(response.data)
         console.log(response.data);
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         getProducts()
     }, [])
     return (
