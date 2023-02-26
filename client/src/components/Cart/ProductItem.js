@@ -1,8 +1,17 @@
-import basket from "../../context/basket"
 import style from "./Basket.module.css"
+import axios from "axios";
 
+function ProductItem({ id, title, price, setArrayBasket }) {
 
-function ProductItem({ id, title, price }) {
+    async function deleteFromBasket() {
+        try {
+            const response = await axios.delete(`/basket/${id}`)
+            setArrayBasket(response.data)
+            console.log(response.data);
+        } catch (error) {
+            alert(error.message)
+        }
+    }
 
     return (
         <div className={style["product"]}>
@@ -14,7 +23,7 @@ function ProductItem({ id, title, price }) {
                 <p className={style["size"]}>S — M</p>
                 <p className={style["price"]}>{price} ₴</p>
             </div>
-            <div className={style["product-delete"]}></div>
+            <div className={style["product-delete"]} onClick={deleteFromBasket}></div>
         </div>
     )
 }

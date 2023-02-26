@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import basket from "../../context/basket"
 import style from "./Basket.module.css"
 import ProductItem from "./ProductItem";
 
@@ -8,14 +7,18 @@ function Basket() {
     let [arrayBasket, setArrayBasket] = useState([])
 
     async function getBasketProduct() {
-        const response = await axios.get("/basket")
-        setArrayBasket(response.data)
-        console.log(response.data);
+        try {
+            const response = await axios.get("/basket")
+            setArrayBasket(response.data)
+            console.log(response.data);
+        } catch (error) {
+            alert(error.message)
+        }
     }
 
     useEffect(() => {
         getBasketProduct()
-    })
+    }, [])
 
     function getCount() {
         let count = 0
@@ -40,8 +43,7 @@ function Basket() {
         <div className={style["cart"]}>
             <div className={style["img-cart"]}></div>
             <div className={style["wrapper-cart"]}>
-
-                {arrayBasket.map(el => <ProductItem id={el.id} title={el.title} price={el.price} />)}
+                {arrayBasket.map(el => <ProductItem key={Math.random()} id={el.id} title={el.title} price={el.price} setArrayBasket={setArrayBasket} />)}
             </div>
 
             <div className={style["total-quantity"]}>

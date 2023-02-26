@@ -1,13 +1,16 @@
-import basket from '../../context/basket'
+// import basket from '../../context/basket'
 import style from './Products.module.css'
+import axios from "axios";
 
 function ProductItem({ id, title, price }) {
 
-    function addToBasket() {
-        const keys = basket.map(el=>el.id)
-        if(!keys.includes(id)) basket.push({ id, title, price })
-
-        // event.target.style = "background-image: url(./assets/)"
+    async function addToBasket() {
+        try {
+            const response = await axios.post(`/basket/${id}`)
+            console.log(response.data);
+        } catch (error) {
+            alert(error.message)
+        }
     }
 
     return (
